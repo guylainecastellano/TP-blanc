@@ -1,0 +1,136 @@
+header{
+  background-image: url('../image/header.jpg');
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 100px;
+}
+#letter{
+  color: #ffffff;
+}
+/*menu*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+ul.topnav li {
+  float: left
+}
+ul.topnav li a {
+  /*display: inline-block;*/
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "work_sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+}
+ul.topnav li a:hover {
+  text-decoration: overline #323232 3px; /*pour trait au dessus de l'onglet du menu*/
+  font-weight: bold;
+}
+ul.topnav li.icon {
+  display: none;
+}
+ul.topnav li.icon a {
+  color: #323232;
+}
+#basket{
+  width: 30%;
+}
+#magnififyingGlass{
+  width: 7%;
+}
+#searchInput{
+  border: 2px solid #323232;
+}
+/*nouveautés*/
+h2{
+  background-color: #323232;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+#blockLine{
+  display: flex;
+  margin: 0px 20px;
+}
+.block{
+  margin: 0px 5px;
+  text-align: center;
+}
+p{
+  font-family: 'work_sans', sans-serif;
+}
+div.block p{
+  text-align: justify;
+  margin: 0px 20px;
+  padding: 30px;
+}
+/*footer*/
+hr{
+  background-color: #323232;
+  height: 10px;
+}
+footer{
+  display:flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+#socialNetwork{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.socialNetworkIcon{
+  width: 50px;
+  height: 70%;
+  margin: 20px;
+}
+/* Responsive */
+@media screen and (max-width:375px) {
+  /*produits*/
+  #blockLine{
+    flex-direction: column;}
+    /*footer*/
+
+
+
+    /*menu*/
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+    }
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    ul.topnav.responsive li {
+      float: none;
+      display: inline;
+    }
+    ul.topnav.responsive li a {
+      display: block;
+      text-align: left;
+    }
+    h1{
+      font-size: 50px;
+    }
+  }
